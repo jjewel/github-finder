@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import NavBar from "./components/layout/NavBar";
-import Users from "./components/users/Users";
-import axios from "axios";
-import "./App.css";
+import React, { Component } from 'react';
+import NavBar from './components/layout/NavBar';
+import Users from './components/users/Users';
+import axios from 'axios';
+import './App.css';
 
 class App extends Component {
   state = {
@@ -12,7 +12,7 @@ class App extends Component {
 
   async componentDidMount() {
     this.setState({ loading: true });
-    const res = await axios.get("https://api.github.com/users");
+    const res = await axios.get('https://api.github.com/users');
     this.setState({ users: res.data, loading: false });
   }
 
