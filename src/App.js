@@ -18,7 +18,7 @@ const App = () => {
           <div className='App'>
             <NavBar />
             <div className='container'>
-              {alert && <Alert alert={alert} />}
+              <Alert alert={alert} />
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/about' component={About} />
